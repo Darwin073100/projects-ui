@@ -1,0 +1,12 @@
+:root{
+    --color-white:#ffffff;
+    --color-blue: #1877f2;
+    --color-green: #42b72a;
+    --color-font-1: #e9e9e9;
+    --color-font-2: hsl(0, 0%, 85%);
+    --size-1: 4px;
+    --size-2: 8px;
+    --size-3: 12px;
+    --size-4: 16px;
+    --font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
