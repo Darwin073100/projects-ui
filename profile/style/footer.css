@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 8px;
+    width: 100%;
+    background-color: var(--color-blue);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item{
+    background-color: var(--color-white);
+    width: 90%;
+    border-radius: 12px;
+    margin: 8px;
+    padding: 4px;
+}
+
+.footer-item .item-body{
+    display: flex;
+    align-items: center;
+}
+
+.footer-item .item-body figure{
+    margin-right: 8px;
+    width: 50px;
+}
