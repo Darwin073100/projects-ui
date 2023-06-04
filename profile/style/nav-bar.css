@@ -23,6 +23,20 @@ header{
     list-style: none;
 }
 
+.navigation-movile{
+    background-color: rgba(255, 255, 255, 0.418);
+    height: auto;
+    list-style: none;
+    display: none;
+}
+
+.navigation-movile a{
+    border: 1px solid var(--color-white-hover);
+    display: inline-block;
+    width: 100%;
+    border-radius: 0px;
+}
+
 
 .title{
     margin: 4px;
@@ -35,22 +49,22 @@ header{
 
 .menu-toggle{
     display: none;
-    background-color: var(--color-white-hover);
+    background-color: var(--color-white);
     margin: 4px;
     border-radius: 8px;
     border: none;
 }
 
 .menu-toggle:active{
-    background-color: var(--color-white);
+    background-color: var(--color-white-hover);
 }
 
 @media (max-width: 600px) {
-    .nav-bar > *{
+    .nav-bar > .navigation{
         display: none;
     }
 
     .menu-toggle{
-        display: block;
+        display: flex;
     }
 }
