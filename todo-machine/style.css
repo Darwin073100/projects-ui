@@ -114,6 +114,11 @@ main{
 .btn-completed:hover{
     background-color: var(--color-white-hover-two);
 }
+
+.btn-completed:active{
+    background-color: var(--color-white-hover);
+}
+
 .btn-clear{
     padding: 8px;
     background-color: var(--color-red);
@@ -122,6 +127,10 @@ main{
 
 .btn-clear:hover{
     background-color: var(--color-red-hover);
+}
+
+.btn-clear:active{
+    background-color: var(--color-red);
 }
 
 
@@ -185,7 +194,8 @@ main{
     right: 20px;
     transition: transform 0.5s;
 }
-#btnAddTodo:hover{
+
+#btnAddTodo:active{
     transform: rotate(180deg);
 }
 
