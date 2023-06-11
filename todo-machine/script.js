@@ -6,5 +6,5 @@ btnAddTodo.addEventListener('click', ()=>{
     isModal = !isModal;
 
     isModal? 
-        mdlModal.style.display='none': mdlModal.style.display='block';
+        mdlModal.style.display='block': mdlModal.style.display='none';
 });

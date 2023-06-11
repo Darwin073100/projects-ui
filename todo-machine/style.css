@@ -198,6 +198,9 @@ main{
 #btnAddTodo:active{
     transform: rotate(180deg);
 }
+#btnAddTodo:hover{
+    transform: rotate(180deg);
+}
 
 #btnAddTodo img{
 width: 50px
