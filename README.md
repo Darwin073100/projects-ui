@@ -9,3 +9,7 @@ https://darwin073100.github.io/projects-ui/facebook/pages/login.html
 ## Maquetación de un portafolio
 Hicimos un proyecto donde pudieramos plasmar las herramientas que manejamos, información personal, como tambien proyectos que hemos realizado y que se encuentran en esta cuenta de GitHub: <br>
 https://darwin073100.github.io/projects-ui/profile/
+
+## Página de todos
+Hicimos un proyecto donde pudieramos agregar todos o actividades que queremos realizar en el dia, la semana, el dia que queramos, podras verlo desde el siguiente enlase: <br>
+https://darwin073100.github.io/projects-ui/todo-machine/

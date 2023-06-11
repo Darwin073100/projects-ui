@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sniglet', cursive;
+}
+:root{
+    --color-white: #ffffff;
+    --color-white-hover: #ececec;
+    --color-white-hover-two: #dadada;
+    --color-blue:  rgb(66, 198, 250);
+    --color-blue-hover:  rgb(144, 224, 255);
+    --color-red: rgb(255, 59, 59);
+    --color-red-hover: rgb(255, 125, 125);
+    --color-yellow: rgb(255, 205, 43);
+    --color-yellow-hover: rgb(255, 217, 92);
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 2;
+}
+
+main{
+    margin-top: 70px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.navbar{
+    background-color: var(--color-white);
+    box-shadow: 2px 3px 7px 1px var(--color-white-hover);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1{
+    margin-right: 10px;
+}
+
+.navbar input{
+    padding: 8px;
+    outline-style: none;
+    border: none;
+    border-radius: 12px;
+    margin: 0 10px 0 10px;
+    background-color: var(--color-white-hover);
+}
+
+.navbar img{
+    width: 20px;
+}
+
+.navbar button{
+    width: 50px;
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(66, 198, 250);
+}
+.navbar button:hover{
+    background-color: var(--color-blue-hover);
+}
+.navbar button:active{
+    background-color: var(--color-blue);
+}
+
+.todo{
+    height: 50px;
+    display: flex;
+    margin: 10px 10px 5px 10px;
+}
+
+.todo-text{
+    width: 100%;
+    padding: 4px;
+    border: 2px solid var(--color-white-hover);
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-options{
+    display: flex;
+}
+
+.todo-options button{
+    border: none;
+}
+
+.todo-options img{
+    width: 30px;
+    height: 30px;
+}
+
+.btn-completed{
+    padding: 8px;
+    background-color: var(--color-white-hover);
+}
+
+.btn-completed:hover{
+    background-color: var(--color-white-hover-two);
+}
+.btn-clear{
+    padding: 8px;
+    background-color: var(--color-red);
+    border-radius: 0 12px 12px 0;
+}
+
+.btn-clear:hover{
+    background-color: var(--color-red-hover);
+}
+
+
+
+/*--------------*/
+#mdlModal{
+    display: none;
+    background-color: #192f6d86;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+}
+
+#mdlModal section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+#mdlModal section article{
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 12px;
+}
+.btn-blue{
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.btn-blue:hover{
+    background-color: var(--color-blue-hover);
+}
+.btn-blue:active{
+    background-color: var(--color-blue);
+}
+
+.btn-yellow{
+    border: none;
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.btn-yellow:hover{
+    background-color: var(--color-yellow-hover);
+}
+.btn-yellow:active{
+    background-color: var(--color-yellow);
+}
+
+#btnAddTodo{
+    border: none;
+    background: none;
+    position: fixed;
+    z-index: 4;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.5s;
+}
+#btnAddTodo:hover{
+    transform: rotate(180deg);
+}
+
+#btnAddTodo img{
+width: 50px
+}
+
+.h1-mobile{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .h1-desktop{
+        display: none;
+    }
+    .h1-mobile{
+        display: block;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
